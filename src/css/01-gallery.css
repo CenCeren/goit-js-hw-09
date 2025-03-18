@@ -5,10 +5,14 @@
   }
   
   .gallery {
+    width: 1128px;
     list-style: none;
-    display: flex;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 5px;
     max-width: 1128px;
     margin: 24px auto;
   }
@@ -17,6 +21,7 @@
     width: 360px;
     height: 200px;
     transition: all ease-in 0.2s;
+    display: block;
   }
   
   .gallery-image:hover {
