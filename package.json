@@ -8,7 +8,7 @@
     "build": "vite build --base=/goit-js-hw-09/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "preview": "vite preview"npm 
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
