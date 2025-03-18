@@ -44,3 +44,5 @@ submit.addEventListener("click", (event) => {
   formData.email = "";
   formData.message = "";
 });
+
+//değişikliler gidiyor mu?
