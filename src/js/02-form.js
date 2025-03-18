@@ -7,7 +7,7 @@ const formData = {
   message: "",
 };
 
-//localstoragede veri varsa formun içine yazmak için
+
 function fillData(localStorage) {
   if (localStorage) {
     form.elements.email.value = localStorage.email;
@@ -20,7 +20,7 @@ function fillData(localStorage) {
 
 fillData(localData);
 
-//forma girilen inputları localstoragede saklamak için
+
 form.addEventListener("input", (event) => {
   if (event.target.name === "email") {
     formData.email = event.target.value.trim();
@@ -31,7 +31,6 @@ form.addEventListener("input", (event) => {
   localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 });
 
-//form submit edilince içeriği temizlemek için
 submit.addEventListener("click", (event) => {
   event.preventDefault();
 

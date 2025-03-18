@@ -1,7 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-// Resim verisini oluştur
 const images = [
   {
     preview:
@@ -68,7 +67,6 @@ const images = [
   },
 ];
 
-// Galeri listesini oluştur
 const ul = document.querySelector("ul.gallery");
 console.log(ul);
 images.forEach((image) => {
@@ -92,7 +90,6 @@ images.forEach((image) => {
   });
 });
 
-//Lightbox'ı başlat
 const lightbox = new SimpleLightbox(".gallery li > a", {
   captionsData: "alt",
   captionDelay: 250,
